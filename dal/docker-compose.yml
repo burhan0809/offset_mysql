@@ -1,0 +1,9 @@
+version: '2'
+services:
+  db:
+    build: ./database
+    container_name: offset-mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
